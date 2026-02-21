@@ -4,7 +4,7 @@
 
 * v0.1 - Basic I/O, variables, and math. - 1.3KB
 * v0.2 - Fixed main.py - 1.4KB
-* v0.3 (Current) - Added a standard library 
+* v0.3 (Current) - Added a standard library - 2.7KB
 
 
 ## Roadmap
