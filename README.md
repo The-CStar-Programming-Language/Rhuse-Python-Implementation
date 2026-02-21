@@ -5,7 +5,7 @@
 * v0.1 - Basic I/O, variables, and math. - 1.3KB
 * v0.2 - Fixed main.py - 1.4KB
 * v0.3 - Added a standard library - 2.7KB
-* v0.4 - Revised main.py to take terminal arguments or display usage.
+* v0.4 - Revised main.py to take terminal arguments or display usage - 2.7KB
 
 
 ## Roadmap
