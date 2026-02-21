@@ -1,4 +1,4 @@
-import tokenizer, math, time, os
+import tokenizer, math, time, os, stdlib
 variables = {}
 def parse(line):
 	command = line[0]
@@ -16,12 +16,17 @@ def parse(line):
 			time.sleep(int(line[1]))
 		case "fib":
 			phi = (1 + math.sqrt(5)) / 2
-			print(int(round((phi**content[1] - (1 - phi)**content[1]) / math.sqrt(5))))
+			print(int(round((phi**line[1] - (1 - phi)**line[1]) / math.sqrt(5))))
 		case "sqrt":
-			print(math.sqrt(content[1]))
+			print(math.sqrt(line[1]))
 		case "sine":
-			print(math.sin(content[1]))
+			print(math.sin(line[1]))
 		case "init":
-			name = content[2]
-			value = content[3]
+			name = line[2]
+			value = line[3]
 			variables[name] = value
+		case "stdlib":
+			function = line[1]
+			function = function.strip()
+			value = line[2]
+			print(exec(f"stdlib.{function}({value})"))
